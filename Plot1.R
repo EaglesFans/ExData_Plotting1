@@ -9,7 +9,7 @@ unzip("household_power_consumption.zip")
 ## Load the data set.
 df_1 <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "NA")
 
-## change the class of "Date" column form character to data.
+## change the class of "Date" column from character to data.
 df_1$Date <- as.Date(df_1$Date, format = "%d/%m/%Y")
 
 ## Subset data from Feb 1 2007 to Feb 2 2007
