@@ -15,7 +15,7 @@ df_1$Date <- as.Date(df_1$Date, format = "%d/%m/%Y")
 ## Subset data from Feb 1 2007 to Feb 2 2007
 df_1_subset <- subset(df_1, subset = (Date >= "2007-02-01" & Date <= "2007-02-02"))
 
-## Chage the class of Global_active_power from character to numeric
+## Change the class of Global_active_power from character to numeric
 df_1_subset$Global_active_power <- as.numeric(df_1_subset$Global_active_power)
 
 ## Add a new column, DateTime, by combining "Date" column and "Time" column. 
