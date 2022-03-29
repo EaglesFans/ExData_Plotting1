@@ -18,7 +18,7 @@ df_1_subset <- subset(df_1, subset = (Date >= "2007-02-01" & Date <= "2007-02-02
 ## Chage the class of Global_active_power from character to numeric
 df_1_subset$Global_active_power <- as.numeric(df_1_subset$Global_active_power)
 
-## Add a new column, DateTime by combining "Date" column and "Time" column. 
+## Add a new column, DateTime, by combining "Date" column and "Time" column. 
 df_1_subset$DateTime <- strptime(paste(df_1_subset$Date, df_1_subset$Time, sep = ""), "%Y-%m-%d %H:%M:%S")
 
 ## Launch a PNG (graphic device) to create a PNG file with a width of 480 pixels and a height of 480 pixels
