@@ -1,6 +1,6 @@
 ## Plot 4: Multiple base plots
 
-## download and unzip the data file
+## Download and unzip the data file
 fileUrl_1 =  "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
 f1 = file.path(getwd(), "household_power_consumption.zip")
 download.file(fileUrl_1, f1, method = "curl")
