@@ -23,7 +23,7 @@ df_1_subset$Sub_metering_1 <- as.numeric(df_1_subset$Sub_metering_1)
 df_1_subset$Sub_metering_2 <- as.numeric(df_1_subset$Sub_metering_2)
 df_1_subset$Sub_metering_3 <- as.numeric(df_1_subset$Sub_metering_3)
 
-## Add a new column, DateTime by combining "Date" column and "Time" column. 
+## Add a new column, DateTime, by combining "Date" column and "Time" column. 
 df_1_subset$DateTime <- strptime(paste(df_1_subset$Date, df_1_subset$Time, sep = ""), "%Y-%m-%d %H:%M:%S")
 
 ## Launch a PNG (graphic device) to create a PNG file with a width of 480 pixels and a height of 480 pixels
